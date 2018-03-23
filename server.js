@@ -23,12 +23,12 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use((req, res, next) => {
-    res.render("maintenance.hbs", {
-        message: "This site is undergoing maintenance, please wait a while."
-    })
-    // next();
-});
+// app.use((req, res, next) => {
+//     res.render("maintenance.hbs", {
+//         message: "This site is undergoing maintenance, please wait a while."
+//     })
+//     // next();
+// });
 
 app.use(express.static(__dirname + "/public"));
 
